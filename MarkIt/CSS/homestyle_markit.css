@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    margin: 12px 100px 12px 100px ;
+}
+
+nav {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.markit-logo a {
+    font-size: 32px;
+    font-weight: bold;
+    color: #070F2B;
+    text-decoration: none;
+}
+
+.navs {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navs ul {
+    display: flex;
+    flex-direction: center;
+}
+
+.navs ul li {
+    list-style: none;
+    margin-left: 64px;
+    display: flex;
+}
+
+.navs ul li a,
+.navs ul li a i {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;
+    color: #0A2647;
+    transition: color 0.3s ease;
+}
+
+.navs ul li a:hover,
+.navs ul li a i:hover {
+    color: #2C74B3;
+}
+
+
+/* div */
+.dashboard{
+    position: relative;
+    background-color: var(--panel-color);
+    width: 100%;
+    padding: 10px 10px;
+    transition: var(--tran-05);
+}
+.dashboard .top .filter-box{
+    position: relative;
+    height: 45px;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 0px;
+}
+.top .filter-box input{
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 1px solid var(--border-color);
+    background-color: var(--panel-color);
+    padding: 0 15px 0 10px;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    cursor: pointer;
+}
+
+.dashboard .dash-content{
+    padding-top: 10px;
+    margin: 0px 40px 0px 40px;
+}
+.dash-content .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0 0px 0;
+}
+.title .shop, .title .filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0 5px 0;
+}
+.shop i{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    color: #2C74B3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.shop .text{
+    font-size: 24px;
+    font-weight: 600;
+    color: #0A2647;
+    margin-left: 10px;
+}
+.filter input{
+    padding: 0rem 0rem 0rem .5rem;
+    width: 7.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    margin-right: .75rem;
+
+    border: 0.1rem solid #ccc;
+    border-radius: .5rem;
+}
+.filter i{
+    color: #524C42;
+    font-size: 1.25rem;
+}
+.filter button{
+    font-size: 1rem;
+    cursor: pointer;
+}
+.bn1 {
+    display: inline-block;
+    border: 0.1rem solid #ccc;
+    text-align: center;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 500;
+    color: #070F2B;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .bn1:hover {
+    color: #070F2B;
+    background-color: #ccc;
+  }
+
+.date-indicator{
+    font-weight: 600;
+    color: #707070;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .25rem;
+}
+
+.dash-content .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dash-content .boxes .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: calc(100% / 3 - 10px);
+    padding: 50px 0px;
+    background-color: #4A55A2;
+    transition: var(--tran-05);
+}
+.boxes .box i{
+    font-size: 35px;
+    color: #F6F5F2;
+}
+.boxes .box .text{
+    white-space: nowrap;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #F6F5F2;
+}
+.boxes .box p{
+    font-size: 1rem;
+    color: #f6f5f2e1;
+}
+.boxes .box .number{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    color: #F6F5F2;
+}
+.boxes .box.box2{
+    background-color: #7895CB;
+}
+.boxes .box.box3{
+    background-color: #A0BFE0;
+}
+
+.recent-transactions {
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.recent-transactions h2 {
+    font-size: 1.5rem;
+    color: #0A2647;
+    margin-bottom: .25rem;
+}
+
+.recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+.recent-transactions th,
+.recent-transactions td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+.recent-transactions th {
+    background-color: #2C74B3;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+.recent-transactions tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.recent-transactions tbody tr:hover {
+    background-color: #A0BFE0;
+}

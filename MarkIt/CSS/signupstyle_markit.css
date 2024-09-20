@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 12px 100px 12px 100px;
+}
+nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.markit-logo a {
+  font-size: 32px;
+  font-weight: bold;
+  color: #070F2B;
+  text-decoration: none;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+h2.pagename {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #333;
+  font-size: 35px;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.intro .markit {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  color: #666;
+}
+
+.register-container {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  margin: 20px 0;
+}
+
+.register-container h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: white;
+}
+
+.register-container input[type="text"]:focus,
+.register-container input[type="password"]:focus,
+.register-container input[type="email"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.register-container button:hover {
+  background-color: #000000;
+  color: white;
+  transform: scale(1.05);
+  border: 1px solid;
+}
+
+.password {
+  color: white;
+  font-size: 12px;
+  text-align: right;
+  display: block;
+  margin: 10px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-container a {
+  color: tan;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.button-container .separator {
+  border-left: 1px solid white;
+  height: 20px;
+  margin: 0 10px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.required-field:invalid {
+  border-color: red;
+}
+
+.required-field:focus {
+  border-color: #007bff;
+}
+
+@media (min-width: 768px) {
+  .interface {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .intro {
+    width: 50%;
+  }
+  .register-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .interface {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro, .register-container {
+    width: 100%;
+  }
+}
+
+.sign-up {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.sign-up:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+.password:hover {
+  transform: scale(1.05);
+}
